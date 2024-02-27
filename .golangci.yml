@@ -1,0 +1,11 @@
+linters:
+  disable-all: true
+  enable:
+    - gocritic
+
+  gocritic:
+    enabled-checks:
+      - ruleguard
+    settings:
+      ruleguard:
+        rules: "${configDir}/gorules/*.go"
